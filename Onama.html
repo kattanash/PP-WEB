@@ -83,18 +83,22 @@
         </div>
     </div>
 
-  <footer class="navbar-fixed-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6">
-          <p>Ivana Ubiparipović<br> Jovana Vasiljević<br> Stefan Katai</p>
-        </div>
-        <div class="col-xs-6 text-right">
-          <p>ivaubip90@gmail.com<br>jovana@gmail.com <br> kataistefan15@gmail.com
+    <footer class="navbar-fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-3">
+            <p>Ivana Ubiparipović<br> Jovana Vasiljević<br> Stefan Katai</p>
+          </div>
+          <div class="col-xs-6 text-center">
+            <span id="clock" style="display: inline-block; margin: 0 auto;"></span>
+          </div>
+          <div class="col-xs-3 text-right">
+            <p>ivaubip90@gmail.com<br>jovana@gmail.com <br> kataistefan15@gmail.com</p>
           </div>
         </div>
-    </div>
+      </div>
     </footer>
+    
     <!-- Add this script at the end of your HTML document -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -125,3 +129,12 @@
 
 </body>
 
+<script type="text/javascript">
+  var clockElement = document.getElementById('clock');
+
+  function clock() {
+      clockElement.textContent = new Date().toString();
+  }
+
+  setInterval(clock, 1000);
+</script>
