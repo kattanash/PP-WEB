@@ -69,17 +69,39 @@
     </div>
   </footer>
   
-  
-
-    </footer>
 </body>
 
 <script type="text/javascript">
-  var clockElement = document.getElementById('clock');
+var clockElement = document.getElementById('clock');
 
-  function clock() {
-      clockElement.textContent = new Date().toString();
+function clock() {
+    clockElement.textContent = new Date().toString();
+}
+
+setInterval(clock, 1000);
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var navbar = document.querySelector('.navbar');
+  var footer = document.querySelector('.navbar-fixed-bottom');
+  var scrollClass = 'scrolled';
+  var scrollThreshold = 100;
+
+  function updateScrollClass() {
+    if (window.scrollY > scrollThreshold) {
+      document.body.classList.add(scrollClass);
+      navbar.classList.add('navbar-solid');
+      footer.classList.add('footer-solid');
+    } else {
+      document.body.classList.remove(scrollClass);
+      navbar.classList.remove('navbar-solid');
+      footer.classList.remove('footer-solid');
+    }
   }
 
-  setInterval(clock, 1000);
+  updateScrollClass();
+
+  window.addEventListener('scroll', updateScrollClass);
+});
 </script>
