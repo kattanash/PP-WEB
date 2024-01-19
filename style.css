@@ -157,23 +157,39 @@
   transform: scale(1.5);
 }
 
-.galerija{
-  width: 100%;
+.galerija {
+  width: 300px;
+  height: 200px;
   margin: auto;
   display: inline-block;
   transition: transform 0.4s cubic-bezier(.17,.67,.83,.67);
   margin-bottom: 10px;
+  object-fit: cover; 
 }
 
-.galerija:hover{
+.galerija:hover {
   transform: scale(1.5);
 }
 
 .gallery-item {
   display: inline-block;
   margin-right: 20px;
-  width: 30%; 
+  width: 30%;
 }
+
+
+@media (max-width: 768px) {
+  .galerija {
+    width: 100%; 
+    height: auto;
+  }
+
+  .gallery-item {
+    width: 100%;
+    margin-right: 0; 
+  }
+}
+
 
 .containerMenu{
   margin-top: 200px;
