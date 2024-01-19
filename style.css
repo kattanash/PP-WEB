@@ -183,12 +183,31 @@
 .MenuSlike{
   width: 300px;
   height: auto;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .containerMenu h4{
-  color: rgb(255, 0, 0);
+  color: rgb(226, 228, 216);
+  font-weight: bold;
+  font-family: Cormorant Garamond;
+  text-align: centetr;
 }
 
 .containerMenu p{
-  color: white;
+  color: rgb(216, 185, 143);
+  transform: skew(-10deg);
+  font-family: Cormorant Garamond;
+  text-align: justify;
 }
+
+.background-containerMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./gallery/ingredients-cooking-pasta-wooden-background.jpg') center center fixed;
+  background-size: cover;
+  z-index: -1;
+}
+
