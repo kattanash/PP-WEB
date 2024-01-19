@@ -172,7 +172,7 @@
 .gallery-item {
   display: inline-block;
   margin-right: 20px;
-  width: 30%; /* Adjust the margin as needed */
+  width: 30%; 
 }
 
 .containerMenu{
@@ -181,11 +181,14 @@
   margin-bottom: 100px;
 }
 
-.MenuSlike{
-  width: 300px;
+.MenuSlike {
+  width: 20vw;
+  max-width: 20vw;
   height: auto;
   border: 2px solid rgb(0, 0, 0);
 }
+
+
 
 .containerMenu h4{
   color: rgb(226, 228, 216);
@@ -201,6 +204,8 @@
   font-family: Cormorant Garamond;
   text-align: justify;
   font-size: large;
+  margin-left: 10px;
+  
 }
 
 .background-containerMenu {
@@ -214,3 +219,8 @@
   z-index: -1;
 }
 
+.media-body strong {
+  color: rgb(226, 228, 216);
+  font-weight: bold;
+  
+}
