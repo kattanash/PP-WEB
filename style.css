@@ -85,6 +85,18 @@
   width: 100%;
 }
 
+.navbar-toggle {
+  margin-top: 35px; /* Adjust the margin as needed */
+  padding: 15px 15px; /* Adjust padding as needed */
+  background-color: transparent; /* Set background color as needed */
+  border: 2px solid #fff; /* Set border styles as needed */
+  border-radius: 10px; /* Adjust border-radius as needed */
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #fff; /* Set the color of the toggle bars as needed */
+}
+
 .navbar-fixed-bottom {
   position: fixed;
   bottom: 5px;
