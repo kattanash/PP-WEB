@@ -1,6 +1,6 @@
 
 
-    /* Container for the background image */
+    
     .background-container {
       position: fixed;
       top: 0;
@@ -31,15 +31,15 @@
 
     .navbar-brand {
   
-  padding-top: 15px; /* Adjust the padding as needed */
+  padding-top: 15px; 
   
   
 }
 
 .navbar-brand img {
-  max-height: 90px; /* Set the desired height */
-  width: auto; /* Maintain aspect ratio */
-  margin-right: 10px; /* Adjust the margin as needed */
+  max-height: 90px; 
+  width: auto; 
+  margin-right: 10px; 
 }
 
 
@@ -51,7 +51,7 @@
   transition: color 0.3s, border-bottom 0.3s, font-size 0.3s;
   text-decoration: none;
   position: relative;
-  padding: 15px 5px; /* Adjust padding as needed */
+  padding: 15px 5px; 
   
 }
 
@@ -89,14 +89,14 @@
   position: fixed;
   bottom: 5px;
   width: 100%;
-  background-color: #0000009a; /* Set your preferred background color */
-  color: white; /* Set text color */
+  background-color: #0000009a; 
+  color: white; 
 }
 
 .big-text {
   text-align: center;
   color:rgba(255, 255, 255, 0.76);
-  font-size: 10vw; /* Use viewport width as a unit for responsive font size */
+  font-size: 10vw; 
   font-weight: bold;
   margin-top: 20vh;
   font-family: 'Rock Salt', cursive;
@@ -104,15 +104,15 @@
 
 
 @media (max-width: 767px) {
-  /* Adjust the breakpoint value as needed */
+  
 }
 
 .dropdown-menu {
-  background-color: rgba(255, 254, 254, 0.055); /* Use rgba for transparency */
+  background-color: rgba(255, 254, 254, 0.055);
 }
 
 .dropdown-menu li a {
-  color: #ffffff; /* White text color */
+  color: #ffffff; 
 }
 
 .Tekst{
@@ -200,11 +200,13 @@
 
 .containerMenu p{
   color: rgb(219, 199, 170);
-  transform: skew(-10deg);
+  
   font-family: Cormorant Garamond;
   text-align: justify;
   font-size: large;
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-right: 100px;
+  font-style: italic;
   
 }
 
@@ -222,5 +224,6 @@
 .media-body strong {
   color: rgb(226, 228, 216);
   font-weight: bold;
+  font-style: normal; 
   
 }
