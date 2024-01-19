@@ -211,18 +211,20 @@
   border: 2px solid rgb(0, 0, 0);
 }
 
-
+.containerMenu p strong {
+    font-style: normal;
+  color: white;}
 
 .containerMenu h4{
-  color: rgb(226, 228, 216);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   font-family: Cormorant Garamond;
   text-align: centetr;
-  font-size: large;
+  font-size: 2rem;
 }
 
 .containerMenu p{
-  color: rgb(219, 199, 170);
+  color: rgb(226, 214, 196);
   
   font-family: Cormorant Garamond;
   text-align: justify;
