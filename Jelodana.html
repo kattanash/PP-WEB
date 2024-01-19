@@ -20,6 +20,11 @@
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header text-center">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <a class="navbar-brand" href="./Pocetna.html">
           <img src="./gallery/ratatouille.png" alt="Logo" class="navbar-logo">
         </a>
@@ -29,7 +34,7 @@
           <li><a href="./Pocetna.html">Početna</a></li>
           <li><a href="./Onama.html">O nama</a></li>
           <li><a href="./Galerija.html">Galerija</a></li>
-          <li class="active"><a href="./Jelodana.html">Jelo dana</a></li>
+          <li class="active"><a href="./Jelodana.html">Specijalitet kuće</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Meni <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -39,7 +44,6 @@
               <li><a href="./Pica.html">Pića</a></li>
               <li><a href="./Dezerti.html">Dezerti</a></li>
               <li><a href="./Veganskimeni.html">Veganski meni</a></li>
-
             </ul>
           </li>
         </ul>
@@ -71,14 +75,52 @@
   <footer class="navbar-fixed-bottom">
     <div class="container">
       <div class="row">
-        <div class="col-xs-6">
+        <div class="col-xs-3">
           <p>Ivana Ubiparipović<br> Jovana Vasiljević<br> Stefan Katai</p>
         </div>
-        <div class="col-xs-6 text-right">
-          <p>ivaubip90@gmail.com<br>jovana@gmail.com <br> kataistefan15@gmail.com
-          </div>
+        <div class="col-xs-6 text-center">
+          <span id="clock" style="display: inline-block; margin: 0 auto;"></span>
         </div>
+        <div class="col-xs-3 text-right">
+          <p>ivaubip90@gmail.com<br>jovana@gmail.com <br> kataistefan15@gmail.com</p>
+        </div>
+      </div>
     </div>
-    </footer>
+  </footer>
+  
 </body>
 
+<script type="text/javascript">
+var clockElement = document.getElementById('clock');
+
+function clock() {
+    clockElement.textContent = new Date().toString();
+}
+
+setInterval(clock, 1000);
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var navbar = document.querySelector('.navbar');
+  var footer = document.querySelector('.navbar-fixed-bottom');
+  var scrollClass = 'scrolled';
+  var scrollThreshold = 100;
+
+  function updateScrollClass() {
+    if (window.scrollY > scrollThreshold) {
+      document.body.classList.add(scrollClass);
+      navbar.classList.add('navbar-solid');
+      footer.classList.add('footer-solid');
+    } else {
+      document.body.classList.remove(scrollClass);
+      navbar.classList.remove('navbar-solid');
+      footer.classList.remove('footer-solid');
+    }
+  }
+
+  updateScrollClass();
+
+  window.addEventListener('scroll', updateScrollClass);
+});
+</script>

@@ -1,6 +1,6 @@
 
 
-    /* Container for the background image */
+    
     .background-container {
       position: fixed;
       top: 0;
@@ -9,10 +9,9 @@
       height: 100%;
       background: url('./gallery/background.jpg') center center fixed;
       background-size: cover;
-      z-index: -1; /* Place the background container behind the content */
+      z-index: -1;
     }
 
-    /* Gray low-opacity filter for the background */
     .background-container::before {
       content: '';
       position: absolute;
@@ -20,27 +19,27 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.514); /* Adjust the opacity and color as needed */
+      background: rgba(0, 0, 0, 0.514); 
     }
 
 
 .navbar {
-  background-color: #0000003d; /* Set your preferred background color */
-  border: none; /* Remove the default border, if any */
+  background-color: #0000003d; 
+  border: none; 
   padding-bottom: 40px;
 }
 
     .navbar-brand {
   
-  padding-top: 15px; /* Adjust the padding as needed */
+  padding-top: 15px; 
   
   
 }
 
 .navbar-brand img {
-  max-height: 90px; /* Set the desired height */
-  width: auto; /* Maintain aspect ratio */
-  margin-right: 10px; /* Adjust the margin as needed */
+  max-height: 90px; 
+  width: auto; 
+  margin-right: 10px; 
 }
 
 
@@ -52,7 +51,7 @@
   transition: color 0.3s, border-bottom 0.3s, font-size 0.3s;
   text-decoration: none;
   position: relative;
-  padding: 15px 5px; /* Adjust padding as needed */
+  padding: 15px 5px; 
   
 }
 
@@ -90,14 +89,14 @@
   position: fixed;
   bottom: 5px;
   width: 100%;
-  background-color: #0000009a; /* Set your preferred background color */
-  color: white; /* Set text color */
+  background-color: #0000009a; 
+  color: white; 
 }
 
 .big-text {
   text-align: center;
   color:rgba(255, 255, 255, 0.76);
-  font-size: 10vw; /* Use viewport width as a unit for responsive font size */
+  font-size: 10vw; 
   font-weight: bold;
   margin-top: 20vh;
   font-family: 'Rock Salt', cursive;
@@ -105,15 +104,15 @@
 
 
 @media (max-width: 767px) {
-  /* Adjust the breakpoint value as needed */
+  
 }
 
 .dropdown-menu {
-  background-color: rgba(255, 254, 254, 0.055); /* Use rgba for transparency */
+  background-color: rgba(255, 254, 254, 0.055);
 }
 
 .dropdown-menu li a {
-  color: #ffffff; /* White text color */
+  color: #ffffff; 
 }
 
 .Tekst{
@@ -158,20 +157,90 @@
   transform: scale(1.5);
 }
 
-.galerija{
-  width: 100%;
+.galerija {
+  width: 300px;
+  height: 200px;
   margin: auto;
   display: inline-block;
   transition: transform 0.4s cubic-bezier(.17,.67,.83,.67);
   margin-bottom: 10px;
+  object-fit: cover; 
 }
 
-.galerija:hover{
+.galerija:hover {
   transform: scale(1.5);
 }
 
 .gallery-item {
   display: inline-block;
   margin-right: 20px;
-  width: 30%; /* Adjust the margin as needed */
+  width: 30%;
 }
+
+
+@media (max-width: 768px) {
+  .galerija {
+    width: 50%; 
+    height: auto;
+    margin-left: 25%;
+  }
+
+  .gallery-item {
+    width: 100%;
+    margin-right: 0; 
+    
+  }
+
+  .gallery-item p{
+    margin-left: 25%;
+
+  }
+}
+
+
+.containerMenu{
+  margin-top: 200px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+
+.MenuSlike {
+  width: 20vw;
+  max-width: 20vw;
+  height: auto;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+
+
+.containerMenu h4{
+  color: rgb(226, 228, 216);
+  font-weight: bold;
+  font-family: Cormorant Garamond;
+  text-align: centetr;
+  font-size: large;
+}
+
+.containerMenu p{
+  color: rgb(219, 199, 170);
+  
+  font-family: Cormorant Garamond;
+  text-align: justify;
+  font-size: large;
+  margin-left: 20px;
+  margin-right: 100px;
+  font-style: italic;
+  
+}
+
+.background-containerMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./gallery/ingredients-cooking-pasta-wooden-background.jpg') center center fixed;
+  background-size: cover;
+  z-index: -1;
+}
+
