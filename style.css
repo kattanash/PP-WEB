@@ -85,18 +85,6 @@
   width: 100%;
 }
 
-.navbar-toggle {
-  margin-top: 35px; /* Adjust the margin as needed */
-  padding: 15px 15px; /* Adjust padding as needed */
-  background-color: transparent; /* Set background color as needed */
-  border: 2px solid #fff; /* Set border styles as needed */
-  border-radius: 10px; /* Adjust border-radius as needed */
-}
-
-.navbar-toggle .icon-bar {
-  background-color: #fff; /* Set the color of the toggle bars as needed */
-}
-
 .navbar-fixed-bottom {
   position: fixed;
   bottom: 5px;
@@ -190,6 +178,7 @@
 .containerMenu{
   margin-top: 200px;
   margin-left: 50px;
+  margin-bottom: 100px;
 }
 
 .MenuSlike{
@@ -203,13 +192,15 @@
   font-weight: bold;
   font-family: Cormorant Garamond;
   text-align: centetr;
+  font-size: large;
 }
 
 .containerMenu p{
-  color: rgb(216, 185, 143);
+  color: rgb(219, 199, 170);
   transform: skew(-10deg);
   font-family: Cormorant Garamond;
   text-align: justify;
+  font-size: large;
 }
 
 .background-containerMenu {
