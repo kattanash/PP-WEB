@@ -15,12 +15,17 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-  <div class="background-container"></div>
+  <div class="background-containerMenu"></div>
 
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header text-center">
-        <a class="navbar-brand" href="./Pocetna.html">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
           <img src="./gallery/ratatouille.png" alt="Logo" class="navbar-logo">
         </a>
       </div>
@@ -30,16 +35,15 @@
           <li><a href="./Onama.html">O nama</a></li>
           <li><a href="./Galerija.html">Galerija</a></li>
           <li><a href="./Jelodana.html">Jelo dana</a></li>
-          <li class="dropdown, active">
+          <li class="dropdown active">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Meni <span class="caret"></span></a>
-            <ul class="dropdown-menu" class="active">
+            <ul class="dropdown-menu">
               <li><a href="./Predjela.html">Predjela</a></li>
               <li><a href="./Glavnajela.html">Glavna jela</a></li>
               <li><a href="./Salate.html">Salate</a></li>
               <li><a href="./Pica.html">Pića</a></li>
               <li><a href="./Dezerti.html">Dezerti</a></li>
               <li><a href="./Veganskimeni.html">Veganski meni</a></li>
-
             </ul>
           </li>
         </ul>
@@ -47,17 +51,127 @@
     </div>
   </nav>
 
+  <div class="containerMenu">
+    <div class="row">
+
+      <div class="col-md-10">
+        <div class="media">
+          <div class="media-left">
+            <img src="./gallery/predjela/Appleandprosciuttobruschetta.jpeg" alt="Image 1" class="MenuSlike">
+          </div>
+          <div class="media-body text-center">
+            <h4 class="media-heading">Brusketa sa jabukama i pršutom</h4>
+            <p>Osvežavajuće predjelo koje spaja hrskavu bagetu s tankim kriškama sočnih jabuka i delikatnim pršutom. Sladak ton jabuka savršeno se uklapa s bogatstvom pršuta, stvarajući izuzetno ukusnu harmoniju. Dodatak blagog začina doprinosi balansu slatkog i slanog, pružajući jedinstveno gastronomsko iskustvo.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-10">
+        <div class="media">
+          <div class="media-left">
+            <img src="./gallery/predjela/Baked spring rolls.jpeg" alt="Image 2" class="MenuSlike">
+          </div>
+          <div class="media-body text-center">
+            <h4 class="media-heading">
+              Pohovane rolnice od povrća</h4>
+            <p>Tanke rižine kore pažljivo obavijaju sočno punjenje sa šargarepom, kelerabom, kineskim kupusom, gljivama i bambusovim izdancima, obogaćenim svežim peršunom i aromatičnim začinima. Uz dodatak klica soje i opcionalni izbor morskih plodova, tofua ili piletine, prilagođavamo se vašim ukusima. Pečene do savršene hrskavosti, poslužene s umakom od soja sosa, đumbira i susamovog ulja za potpuni doživljaj raznolikosti ukusa i tekstura. Ovo jelo spaja tradiciju i modernu kuhinju, nudeći neodoljivu poslasticu za vaše gurmansko zadovoljstvo.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-10 text-center">
+        <div class="media">
+          <div class="media-left">
+            <img src="./gallery/predjela/Brie and caramelised pear tart.jpeg" alt="Image 2" class="MenuSlike">
+          </div>
+          <div class="media-body text-center">
+            <h4 class="media-heading">Tart sa Brie sirom i karamelizovanim kruškama</h4>
+            <p>Ukusan spoj hrskavog lisnatog tijesta, kremastog Brie sira i karamelizovanih krušaka. Savršena kombinacija slatkog i slanog pruža jedinstveno zadovoljstvo. Ova poslastica donosi sofisticiranu harmoniju tradicionalnih sastojaka, stvarajući neodoljiv desertni užitak.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-10">
+        <div class="media">
+          <div class="media-left">
+            <img src="./gallery/predjela/Butter chicken vol-au-vents.jpeg" alt="Image 2" class="MenuSlike">
+          </div>
+          <div class="media-body text-center">
+            <h4 class="media-heading">Vol-au-vents s piletinom u maslacu</h4>
+            <p>Uživajte u luksuznom doživljaju naših vol-au-vents kora, hrskavo obavijenih oko sočnih komadića piletine, kuvanih u prefinjenom maslacom umaku. Delikatno začinjeni s notama đumbira, belog luka i tandoori začina, ovi minijaturni užici predstavljaju savršenu simfoniju indijskih i francuskih kulinarskih tradicija. Svaki zalogaj pruža bogatstvo ukusa i tekstura, naglašavajući spoj izvrsnosti i elegancije u svakom trenutku uživanja u hrskavom zadovoljstvu.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-10">
+        <div class="media">
+          <div class="media-left">
+            <img src="./gallery/predjela/Roasted stuffed mushrooms.jpeg" alt="Image 2" class="MenuSlike">
+          </div>
+          <div class="media-body text-center">
+            <h4 class="media-heading">Pečene punjene pečurke</h4>
+            <p>Pečene punjene pečurke predstavljaju ukusnu simfoniju hrskavosti i sočnosti. Svaka pažljivo pečena pečurka otkriva bogato punjenje sastavljeno od svježeg povrća i aromatičnih biljaka. Ovaj gurmanski užitak ističe delikatnu ravnotežu tekstura i okusa, pružajući elegantnu poslasticu koja će osvojiti vaša nepca svojom sofisticiranom jednostavnošću.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  
+  
+
   <footer class="navbar-fixed-bottom">
     <div class="container">
       <div class="row">
-        <div class="col-xs-6">
+        <div class="col-xs-3">
           <p>Ivana Ubiparipović<br> Jovana Vasiljević<br> Stefan Katai</p>
         </div>
-        <div class="col-xs-6 text-right">
-          <p>ivaubip90@gmail.com<br>jovana@gmail.com <br> kataistefan15@gmail.com
-          </div>
+        <div class="col-xs-6 text-center">
+          <span id="clock" style="display: inline-block; margin: 0 auto;"></span>
         </div>
+        <div class="col-xs-3 text-right">
+          <p>ivaubip90@gmail.com<br>jovana@gmail.com <br> kataistefan15@gmail.com</p>
+        </div>
+      </div>
     </div>
-    </footer>
+  </footer>
+  
 </body>
+
+<script type="text/javascript">
+var clockElement = document.getElementById('clock');
+
+function clock() {
+    clockElement.textContent = new Date().toString();
+}
+
+setInterval(clock, 1000);
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var navbar = document.querySelector('.navbar');
+  var footer = document.querySelector('.navbar-fixed-bottom');
+  var scrollClass = 'scrolled';
+  var scrollThreshold = 100;
+
+  function updateScrollClass() {
+    if (window.scrollY > scrollThreshold) {
+      document.body.classList.add(scrollClass);
+      navbar.classList.add('navbar-solid');
+      footer.classList.add('footer-solid');
+    } else {
+      document.body.classList.remove(scrollClass);
+      navbar.classList.remove('navbar-solid');
+      footer.classList.remove('footer-solid');
+    }
+  }
+
+  updateScrollClass();
+
+  window.addEventListener('scroll', updateScrollClass);
+});
+</script>
 
